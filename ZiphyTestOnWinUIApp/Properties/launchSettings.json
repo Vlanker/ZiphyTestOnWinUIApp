@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ZiphyTestOnWinUIApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ZiphyTestOnWinUIApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

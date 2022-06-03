@@ -12,6 +12,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Microsoft.Web.WebView2.Core;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -26,11 +27,46 @@ namespace ZiphyTestOnWinUIApp
         public MainWindow()
         {
             this.InitializeComponent();
+            
+            ExtendsContentIntoTitleBar = true;
+            SetTitleBar(AppTitleBar);
+            
+            WebView.NavigationStarting += EnsureHttps;
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
         {
-            myButton.Content = "Clicked";
+            var uri = args.Uri;
+            
+            if (!uri.StartsWith("https://"))
+            {
+                args.Cancel = true;
+            }
+            else
+            {
+                AddressBar.Text = uri;
+            }
+        }
+
+        private void OnKeyUpEnter(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                GoToButton_Click(this, new RoutedEventArgs());
+            }
+        }
+
+        private void GoToButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var targetUri = new Uri(AddressBar.Text);
+                WebView.Source = targetUri;
+            }
+            catch (FormatException ex)
+            {
+                // Incorrect address entered.
+            }
         }
     }
 }

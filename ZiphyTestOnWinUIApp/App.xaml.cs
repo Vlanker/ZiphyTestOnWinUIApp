@@ -15,6 +15,14 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using ZiphyTestOnWinUIApp.Contracts.Services;
+using ZiphyTestOnWinUIApp.Core.Contracts.Services;
+using ZiphyTestOnWinUIApp.Core.Services;
+using ZiphyTestOnWinUIApp.Models;
+using ZiphyTestOnWinUIApp.Services;
+
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -26,6 +34,29 @@ namespace ZiphyTestOnWinUIApp
     /// </summary>
     public partial class App : Application
     {
+        private static IHost _host = Host
+            .CreateDefaultBuilder()
+            .ConfigureServices((context, services) =>
+            {
+                // Services
+                services.AddSingleton<ILocalSettingsService, LocalSettingsServicePackaged>();
+
+                // Core Services
+                services.AddSingleton<IFileService, FileService>();
+
+                // Views and ViewModels
+                services.AddTransient<MainWindow>();
+
+                // Configuration
+                services.Configure<LocalSettingsOptions>(
+                    context.Configuration.GetSection(nameof(LocalSettingsOptions)));
+            })
+            .Build();
+
+        public static T GetService<T>()
+            where T : class
+            => _host.Services.GetService(typeof(T)) as T;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().

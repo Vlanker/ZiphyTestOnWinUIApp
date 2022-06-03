@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Main_GoToButton.Content" xml:space="preserve">
-    <value>Go to</value>
+    <value>Перейти</value>
     <comment>Button Content for MainWindow</comment>
   </data>
   <data name="Main_Icon.Source" xml:space="preserve">
@@ -126,11 +126,11 @@
     <comment>Icon Source for MainWindow </comment>
   </data>
   <data name="Main_Title.Text" xml:space="preserve">
-    <value>Ziphy Test App (Browser)</value>
+    <value>Ziphy Test App (Браузер)</value>
     <comment>Title Text for MainWindow</comment>
   </data>
   <data name="Main_WebView.Source" xml:space="preserve">
-    <value>https://www.microsoft.com/en-us/</value>
+    <value>https://www.microsoft.com/ru-ru/</value>
     <comment>WebView Source for MainWindow</comment>
   </data>
 </root>

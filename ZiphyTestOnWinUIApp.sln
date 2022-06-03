@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiphyTestOnWinUIApp", "ZiphyTestOnWinUIApp\ZiphyTestOnWinUIApp.csproj", "{33F09AD0-49B0-46E0-B27D-AB64C0672A60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiphyTestOnWinUIApp.Core", "ZiphyTestOnWinUIApp.Core\ZiphyTestOnWinUIApp.Core.csproj", "{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|arm64 = Debug|arm64
@@ -33,6 +35,18 @@ Global
 		{33F09AD0-49B0-46E0-B27D-AB64C0672A60}.Release|x86.ActiveCfg = Release|x86
 		{33F09AD0-49B0-46E0-B27D-AB64C0672A60}.Release|x86.Build.0 = Release|x86
 		{33F09AD0-49B0-46E0-B27D-AB64C0672A60}.Release|x86.Deploy.0 = Release|x86
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|arm64.Build.0 = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|x64.Build.0 = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Debug|x86.Build.0 = Debug|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|arm64.ActiveCfg = Release|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|arm64.Build.0 = Release|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x64.ActiveCfg = Release|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x64.Build.0 = Release|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x86.ActiveCfg = Release|Any CPU
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

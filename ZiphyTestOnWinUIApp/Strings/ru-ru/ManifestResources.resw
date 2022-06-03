@@ -117,20 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Main_GoToButton.Content" xml:space="preserve">
-    <value>Go to</value>
-    <comment>Button Content for MainWindow</comment>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Это тестовое задание для компании "Ziphy".</value>
   </data>
-  <data name="Main_Icon.Source" xml:space="preserve">
-    <value>Assets/Square44x44Logo.scale-200.png</value>
-    <comment>Icon Source for MainWindow </comment>
-  </data>
-  <data name="Main_Title.Text" xml:space="preserve">
-    <value>Ziphy Test App (Browser)</value>
-    <comment>Title Text for MainWindow</comment>
-  </data>
-  <data name="Main_WebView.Source" xml:space="preserve">
-    <value>https://www.microsoft.com/en-us/</value>
-    <comment>WebView Source for MainWindow</comment>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>Ziphy Test App (Браузер)</value>
   </data>
 </root>

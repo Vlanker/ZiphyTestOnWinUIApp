@@ -8,7 +8,11 @@
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <!-- Other merged dictionaries here -->
-                <ResourceDictionary Source="" />
+                <ResourceDictionary Source="Styles/Thickness.xaml" />
+                <ResourceDictionary Source="Styles/WebView.xaml" />
+                <ResourceDictionary Source="Styles/Button.xaml" />
+                <ResourceDictionary Source="Styles/Icon.xaml" />
+                <ResourceDictionary Source="Styles/TextBlock.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
         </ResourceDictionary>

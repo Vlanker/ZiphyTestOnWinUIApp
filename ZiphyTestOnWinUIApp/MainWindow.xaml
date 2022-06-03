@@ -7,7 +7,37 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" x:Name="AppTitleBar">
+            <Image x:Uid="Main_Icon" Style="{StaticResource IconStyle}" />
+            <TextBlock x:Uid="Main_Title" Style="{StaticResource TitleStyle}" />
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Row="0" Name="AddressBar" Grid.Column="0" KeyUp="OnKeyUpEnter" />
+            <Button x:Uid="Main_GoToButton" Grid.Row="0" Grid.Column="1" Click="GoToButton_Click"
+                    Style="{StaticResource GoToButtonStyle}" />
+
+            <WebView2 x:Uid="Main_WebView" x:Name="WebView" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0"
+                      Style="{StaticResource WebViewStyle}" />
+
+        </Grid>
+
+    </Grid>
+
 </Window>

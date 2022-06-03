@@ -10,9 +10,17 @@
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <DefaultLanguage>en-US</DefaultLanguage>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Strings\en-us\ResourceDictionary1.xaml" />
+    <None Remove="Styles\Button.xaml" />
+    <None Remove="Styles\Icon.xaml" />
+    <None Remove="Styles\ResourceDictionary1.xaml" />
+    <None Remove="Styles\TextBlock.xaml" />
+    <None Remove="Styles\TextBox.xaml" />
+    <None Remove="Styles\Thickness.xaml" />
+    <None Remove="Styles\WebView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +34,10 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Strings\en-us\ManifestResources.resw" />
+    <Content Include="Strings\en-us\Resources.resw" />
+    <Content Include="Strings\ru-ru\ManifestResources.resw" />
+    <Content Include="Strings\ru-ru\Resources.resw" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,11 +54,52 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Strings\ru-ru\" />
+    <Folder Include="Strings\en-us" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Styles\ResourceDictionary1.xaml">
+    <PRIResource Remove="Strings\en-us\ManifestResources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Strings\en-us\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Strings\ru-ru\ManifestResources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Remove="Strings\ru-ru\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\TextBlock.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\Icon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\WebView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Styles\Thickness.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZiphyTestOnWinUIApp.Core\ZiphyTestOnWinUIApp.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
 </Project>

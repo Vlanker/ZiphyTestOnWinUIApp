@@ -11,7 +11,16 @@
     <None Update="Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>
-    <Page Update="Styles\ResourceDictionary1.xaml">
+    <Page Update="Styles\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Icon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\WebView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Thickness.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

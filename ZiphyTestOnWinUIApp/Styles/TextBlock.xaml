@@ -6,7 +6,7 @@
     <Style x:Key="TitleStyle" TargetType="TextBlock">
         <Setter Property="TextWrapping" Value="NoWrap" />
         <Setter Property="Style" Value="{StaticResource CaptionTextBlockStyle}" />
-        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Margin" Value="28,0,0,0" />
     </Style>
 

@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiphyTestOnWinUIApp", "ZiphyTestOnWinUIApp\ZiphyTestOnWinUIApp.csproj", "{33F09AD0-49B0-46E0-B27D-AB64C0672A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZiphyTestOnWinUIApp", "ZiphyTestOnWinUIApp\ZiphyTestOnWinUIApp.csproj", "{33F09AD0-49B0-46E0-B27D-AB64C0672A60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiphyTestOnWinUIApp.Core", "ZiphyTestOnWinUIApp.Core\ZiphyTestOnWinUIApp.Core.csproj", "{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZiphyTestOnWinUIApp.Core", "ZiphyTestOnWinUIApp.Core\ZiphyTestOnWinUIApp.Core.csproj", "{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9FE6CBAB-AB1F-409A-A8B0-8908CE1D5ABC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{131A91EE-3D26-4CE6-B0E8-816878F61FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,11 +53,28 @@ Global
 		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x64.Build.0 = Release|Any CPU
 		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x86.ActiveCfg = Release|Any CPU
 		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0}.Release|x86.Build.0 = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|arm64.Build.0 = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|arm64.ActiveCfg = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|arm64.Build.0 = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|x64.Build.0 = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC8EFAEE-4DC4-48DE-8C87-65D6741B9154}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33F09AD0-49B0-46E0-B27D-AB64C0672A60} = {9FE6CBAB-AB1F-409A-A8B0-8908CE1D5ABC}
+		{61FD0D57-4CD8-4A5A-A436-AE5B4FA5E4C0} = {9FE6CBAB-AB1F-409A-A8B0-8908CE1D5ABC}
+		{BB4F44B9-A8C3-4843-B3FF-A8BD1352D693} = {131A91EE-3D26-4CE6-B0E8-816878F61FE5}
 	EndGlobalSection
 EndGlobal

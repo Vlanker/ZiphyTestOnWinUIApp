@@ -12,3 +12,10 @@ This is a test task for the company "Ziphy".
 ## Welcome:
 - using DI and unit tests
 - application localization into Russian and English
+
+# Result
+English
+![img.png](img.png)
+
+Russia
+![img_1.png](img_1.png)
